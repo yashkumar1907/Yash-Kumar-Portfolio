@@ -68,7 +68,7 @@ async function startServer() {
     console.warn('MONGODB_URI is not configured. Contact submissions cannot be saved.');
   }
 
-  return app.listen(port, () => {
+  return app.listen(port, '0.0.0.0', () => {
     console.log(`Portfolio backend running on port ${port}`);
   });
 }
