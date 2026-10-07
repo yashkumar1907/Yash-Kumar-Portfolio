@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+const { Resend } = require('resend');
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_LENGTHS = { name: 120, email: 254, message: 5000 };
@@ -40,35 +40,33 @@ function escapeHtml(value) {
   })[character]);
 }
 
-function getSmtpSettings() {
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, CONTACT_RECEIVER_EMAIL } = process.env;
-  const port = Number(SMTP_PORT);
-  if (!SMTP_HOST || !Number.isInteger(port) || port < 1 || port > 65535
-    || !SMTP_USER || !SMTP_PASS || !CONTACT_RECEIVER_EMAIL) return null;
+function getResendSettings() {
+  const {
+    RESEND_API_KEY,
+    RESEND_FROM_EMAIL,
+    CONTACT_RECEIVER_EMAIL,
+  } = process.env;
 
-  return { host: SMTP_HOST, port, user: SMTP_USER, pass: SMTP_PASS, receiver: CONTACT_RECEIVER_EMAIL };
+  if (!RESEND_API_KEY || !RESEND_FROM_EMAIL || !CONTACT_RECEIVER_EMAIL) {
+    return null;
+  }
+
+  return {
+    apiKey: RESEND_API_KEY,
+    from: RESEND_FROM_EMAIL,
+    receiver: CONTACT_RECEIVER_EMAIL,
+  };
 }
 
 async function sendContactNotification(contact) {
-  const settings = getSmtpSettings();
+  const settings = getResendSettings();
 
   if (!settings) {
     return { sent: false, reason: 'not_configured' };
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      host: settings.host,
-      port: settings.port,
-      secure: settings.port === 465,
-      auth: {
-        user: settings.user,
-        pass: settings.pass,
-      },
-      connectionTimeout: 10000,
-      greetingTimeout: 10000,
-      socketTimeout: 15000,
-    });
+    const resend = new Resend(settings.apiKey);
 
     // Human-readable timestamp
     const submittedAt = new Intl.DateTimeFormat('en-IN', {
@@ -89,8 +87,8 @@ async function sendContactNotification(contact) {
 
     const replyUrl = `mailto:${encodeURIComponent(contact.email)}`;
 
-    await transporter.sendMail({
-      from: settings.user,
+    await resend.emails.send({
+      from: settings.from,
       to: settings.receiver,
       replyTo: contact.email,
 
