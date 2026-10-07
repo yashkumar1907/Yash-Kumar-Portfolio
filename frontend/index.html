@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070b14">
+    <meta name="portfolio-api-base-url" content="">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2228%22 fill=%22%2367a8ff%22%3EYK%3C/text%3E%3C/svg%3E">
+    <meta name="description" content="Yash Kumar — Software Developer and AI/ML Enthusiast">
+    <title>Yash Kumar — Software Developer</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+      <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+      <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="YK, Yash Kumar home">
+          <span class="brand__mark">YK</span>
+          <span class="brand__name">YASH KUMAR<span> / SOFTWARE</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+          <a class="site-nav__link site-nav__link--active" href="#home" aria-current="location">Home</a>
+          <a class="site-nav__link" href="#about">About</a>
+          <a class="site-nav__link" href="#skills">Skills</a>
+          <a class="site-nav__link" href="#experience">Experience</a>
+          <a class="site-nav__link" href="#projects">Projects</a>
+          <a class="site-nav__link" href="#contact">Contact</a>
+        </nav>
+
+        <div class="availability"><span class="availability__dot"></span> AVAILABLE</div>
+      </header>
+
+      <main>
+        <section class="hero" id="home" aria-labelledby="hero-title">
+          <div class="hero__ambient" aria-hidden="true"></div>
+          <div class="hero__grid" aria-hidden="true"></div>
+
+          <div class="hero__intro">
+            <p class="eyebrow"><span class="eyebrow__marker"></span> SOFTWARE DEVELOPER <span class="eyebrow__divider">·</span> AI / ML</p>
+            <h1 id="hero-title">Hi, I’m <span>Yash Kumar.</span></h1>
+            <p class="hero__statement">I build software and<br class="desktop-break"> intelligent systems<span>.</span></p>
+            <p class="hero__description">My interests span full stack development and AI/ML, with a focus on building useful software and intelligent systems.</p>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="#projects">Explore My Work <span aria-hidden="true">↗</span></a>
+              <button class="button button--secondary" id="resume-viewer-open" type="button" aria-haspopup="dialog">View Resume <span aria-hidden="true">↗</span></button>
+            </div>
+
+            <div class="hero__footnote"><span class="hero__footnote-line"></span> ENGINEERING WITH INTENTION</div>
+          </div>
+
+          <div class="workspace" role="group" aria-label="Developer workspace preview">
+            <div class="workspace__scene">
+              <div class="workspace__orbit workspace__orbit--outer" aria-hidden="true"></div>
+              <div class="workspace__orbit workspace__orbit--inner" aria-hidden="true"></div>
+              <div class="workspace__spark workspace__spark--one" aria-hidden="true"></div>
+              <div class="workspace__spark workspace__spark--two" aria-hidden="true"></div>
+
+              <article class="workspace__editor interactive-surface" aria-label="Code editor preview">
+                <div class="editor__topbar">
+                  <div class="editor__lights" aria-hidden="true"><i></i><i></i><i></i></div>
+                  <span class="editor__filename">YASH.DEV</span>
+                  <span class="editor__language">JS</span>
+                </div>
+                <div class="editor__tabs" role="tablist" aria-label="Code preview files">
+                  <button class="editor__tab is-active" id="editor-tab-developer" type="button" role="tab" aria-selected="true" aria-controls="editor-code" tabindex="0" data-editor-tab="developer">developer.js</button>
+                  <button class="editor__tab" id="editor-tab-projects" type="button" role="tab" aria-selected="false" aria-controls="editor-code" tabindex="-1" data-editor-tab="projects">projects.js</button>
+                  <button class="editor__tab" id="editor-tab-stack" type="button" role="tab" aria-selected="false" aria-controls="editor-code" tabindex="-1" data-editor-tab="stack">stack.js</button>
+                </div>
+                <div class="editor__body">
+                  <div class="editor__code" id="editor-code" role="tabpanel" aria-labelledby="editor-tab-developer" aria-label="Developer profile code preview" tabindex="0"></div>
+                </div>
+                <div class="editor__statusbar"><span><i></i> READY</span><span>UTF-8 <b>·</b> JAVASCRIPT</span></div>
+              </article>
+
+              <article class="workspace__status interactive-surface" aria-label="Developer focus and system status">
+                <div class="status__inner">
+                  <div class="status__heading"><span>SYSTEM STATUS</span><span class="status__online"><i></i> ONLINE</span></div>
+                  <div class="status__rule"></div>
+                  <p><span class="status__icon">⌘</span> FULL STACK</p>
+                  <p><span class="status__icon">◈</span> AI / ML</p>
+                  <p><span class="status__icon">⌁</span> PROBLEM SOLVING</p>
+                </div>
+              </article>
+
+              <div class="workspace__coordinate" aria-hidden="true">DEV_SPACE <span>01 / 03</span></div>
+              <div class="workspace__crosshair workspace__crosshair--top" aria-hidden="true">+</div>
+              <div class="workspace__crosshair workspace__crosshair--bottom" aria-hidden="true">+</div>
+            </div>
+          </div>
+
+          <div class="hero__bottomline"><span>YK<span class="hero__bottom-dot">.</span></span><span>SOFTWARE · AI / ML · SYSTEMS</span><span>SCROLL TO EXPLORE <i></i></span></div>
+        </section>
+
+        <aside class="now-section" id="now" aria-labelledby="now-title">
+          <div class="now-panel interactive-glow">
+            <div class="now-panel__intro">
+              <p class="now-panel__eyebrow"><span></span> NOW / FOCUS</p>
+              <h2 id="now-title">What I’m focused on</h2>
+              <h3>FULL-STACK DEVELOPMENT</h3>
+              <p>Building practical web applications with backend architecture, APIs, and database-driven systems.</p>
+            </div>
+            <div class="now-panel__status">
+              <span class="now-signal__label">STATUS</span>
+              <strong><i aria-hidden="true"></i> AVAILABLE FOR OPPORTUNITIES</strong>
+              <ul aria-label="Opportunity areas"><li>Internships</li><li>Software Development</li><li>Full-Stack Development</li></ul>
+            </div>
+            <div class="now-panel__core-stack">
+              <p>CORE STACK</p>
+              <ol class="core-stack-flow" aria-label="Core stack flow: HTML, CSS, and JavaScript to Node.js to Express.js to MongoDB">
+                <li><span>HTML</span><span>CSS</span><span>JavaScript</span></li>
+                <li aria-hidden="true">↓</li><li>Node.js</li>
+                <li aria-hidden="true">↓</li><li>Express.js</li>
+                <li aria-hidden="true">↓</li><li>MongoDB</li>
+              </ol>
+            </div>
+            <span class="now-panel__index" aria-hidden="true">NOW</span>
+          </div>
+        </aside>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+          <div class="about__ambient" aria-hidden="true"></div>
+          <div class="about__grid" aria-hidden="true"></div>
+
+          <div class="about__main">
+            <div class="about__intro">
+              <p class="about__eyebrow"><span class="about__eyebrow-line"></span> 01 / ABOUT</p>
+              <h2 id="about-title">A developer who likes building things.</h2>
+              <p class="about__description">I’m pursuing a B.Tech in Computer Science and Engineering with AI at Netaji Subhas University of Technology, with expected graduation in 2027. My interests include full-stack development, AI/ML, and problem solving.</p>
+            </div>
+
+            <dl class="about__metrics" aria-label="Academic and problem-solving details">
+              <div class="about__metric"><dt>CGPA</dt><dd>7.2</dd></div>
+              <div class="about__metric"><dt>DSA PROBLEMS SOLVED</dt><dd>500+</dd></div>
+            </dl>
+          </div>
+
+          <div class="journey-wrap">
+            <div class="journey__heading">
+              <p class="about__eyebrow"><span class="about__eyebrow-line"></span> DEVELOPER JOURNEY</p>
+              <span class="journey__scale">SELECT A MILESTONE <i>↘</i></span>
+            </div>
+            <ol class="journey" aria-label="Education, internship, and problem-solving milestones">
+              <li class="journey__item">
+                <span class="journey__node" aria-hidden="true"></span>
+                <button class="journey__trigger" id="journey-education-trigger" type="button" aria-expanded="false" aria-controls="journey-education-panel">
+                  <span class="journey__meta"><span>01 / EDUCATION</span><span>EXPECTED 2027</span></span>
+                  <span class="journey__title">Computer Science &amp; Engineering with AI</span>
+                  <span class="journey__subtitle">Netaji Subhas University of Technology</span>
+                  <span class="journey__toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="journey__panel" id="journey-education-panel" role="region" aria-labelledby="journey-education-trigger" hidden>
+                  <p>Pursuing a B.Tech in Computer Science and Engineering with AI.</p>
+                  <p class="journey__detail">CGPA <strong>7.2</strong> <span>·</span> Expected graduation <strong>2027</strong></p>
+                </div>
+              </li>
+              <li class="journey__item">
+                <span class="journey__node" aria-hidden="true"></span>
+                <button class="journey__trigger" id="journey-internship-trigger" type="button" aria-expanded="false" aria-controls="journey-internship-panel">
+                  <span class="journey__meta"><span>02 / EXPERIENCE</span><span>MAY — JUL 2026</span></span>
+                  <span class="journey__title">Software Development Intern</span>
+                  <span class="journey__subtitle">Jindal Stainless Ltd. <i>·</i> Hisar</span>
+                  <span class="journey__toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="journey__panel" id="journey-internship-panel" role="region" aria-labelledby="journey-internship-trigger" hidden>
+                  <p>Developed a full-stack enterprise application and modular frontend using Node.js, Express.js, MongoDB/Mongoose, and REST APIs.</p>
+                  <p>Implemented authentication and authorization, CRUD, validation, Excel import/export, PDF management, filtering, PO expiry monitoring, and audit tracking.</p>
+                  <p class="journey__detail">Tools and deployment: Postman, Git/GitHub, MongoDB Atlas, and Render.</p>
+                </div>
+              </li>
+              <li class="journey__item">
+                <span class="journey__node" aria-hidden="true"></span>
+                <button class="journey__trigger" id="journey-problem-solving-trigger" type="button" aria-expanded="false" aria-controls="journey-problem-solving-panel">
+                  <span class="journey__meta"><span>03 / PROBLEM SOLVING</span><span>DSA</span></span>
+                  <span class="journey__title">Problem solving through practice</span>
+                  <span class="journey__subtitle">500+ DSA problems solved</span>
+                  <span class="journey__toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="journey__panel" id="journey-problem-solving-panel" role="region" aria-labelledby="journey-problem-solving-trigger" hidden>
+                  <p>I have solved more than 500 DSA problems and am interested in problem solving.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="about-build" aria-labelledby="about-build-title">
+            <div class="about-build__heading">
+              <p class="about__eyebrow"><span class="about__eyebrow-line"></span> WHAT I ENJOY BUILDING</p>
+              <h3 id="about-build-title">Areas I keep coming back to.</h3>
+            </div>
+            <div class="about-build__grid">
+              <a class="about-build-card interactive-glow" href="#experience">
+                <span class="about-build-card__index">01 / BACKEND</span>
+                <strong>APIs · Databases · Architecture</strong>
+                <span class="about-build-card__link">INTERNSHIP WORK <i aria-hidden="true">↗</i></span>
+              </a>
+              <a class="about-build-card about-build-card--violet interactive-glow" href="#projects">
+                <span class="about-build-card__index">02 / AI / ML</span>
+                <strong>Intelligent Applications</strong>
+                <span class="about-build-card__link">AI EMAIL COPILOT <i aria-hidden="true">↗</i></span>
+              </a>
+              <a class="about-build-card about-build-card--cyan interactive-glow" href="#skills">
+                <span class="about-build-card__index">03 / PROBLEM SOLVING</span>
+                <strong>DSA · Systems · Engineering</strong>
+                <span class="about-build-card__link">EXPLORE SKILLS <i aria-hidden="true">↗</i></span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills" id="skills" aria-labelledby="skills-title">
+          <div class="skills__ambient" aria-hidden="true"></div>
+          <div class="skills__grid" aria-hidden="true"></div>
+
+          <div class="skills__heading">
+            <div>
+              <p class="skills__eyebrow"><span class="skills__eyebrow-line"></span> 02 / SKILLS</p>
+              <h2 id="skills-title">Tools I use to build.</h2>
+            </div>
+            <p class="skills__intro">The technologies and computer science fundamentals I work with.</p>
+          </div>
+
+          <div class="skills-explorer">
+            <div class="skills-categories" role="tablist" aria-label="Skill categories" aria-orientation="vertical">
+              <button class="skills-category is-active" id="category-programming" type="button" role="tab" aria-selected="true" aria-controls="skills-panel" tabindex="0" data-category="programming">
+                <span class="skills-category__number">01</span><span class="skills-category__name">PROGRAMMING</span><span class="skills-category__arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="skills-category" id="category-web" type="button" role="tab" aria-selected="false" aria-controls="skills-panel" tabindex="-1" data-category="web">
+                <span class="skills-category__number">02</span><span class="skills-category__name">WEB &amp; BACKEND</span><span class="skills-category__arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="skills-category" id="category-database" type="button" role="tab" aria-selected="false" aria-controls="skills-panel" tabindex="-1" data-category="database">
+                <span class="skills-category__number">03</span><span class="skills-category__name">DATABASE</span><span class="skills-category__arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="skills-category" id="category-core" type="button" role="tab" aria-selected="false" aria-controls="skills-panel" tabindex="-1" data-category="core">
+                <span class="skills-category__number">04</span><span class="skills-category__name">CORE CS</span><span class="skills-category__arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="skills-category" id="category-tools" type="button" role="tab" aria-selected="false" aria-controls="skills-panel" tabindex="-1" data-category="tools">
+                <span class="skills-category__number">05</span><span class="skills-category__name">TOOLS &amp; DEPLOYMENT</span><span class="skills-category__arrow" aria-hidden="true">↗</span>
+              </button>
+              <div class="skills-categories__footer"><span class="skills-categories__signal"></span> SELECT A CATEGORY</div>
+            </div>
+
+            <div class="skills-display" id="skills-panel" role="tabpanel" aria-labelledby="category-programming" tabindex="0" aria-live="polite">
+              <div class="skills-display__topline"><span>SKILLSET / <span id="skills-display-index">01</span></span><span class="skills-display__indicator"><i></i> ACTIVE SET</span></div>
+              <h3 class="skills-display__title" id="skills-display-title">PROGRAMMING</h3>
+              <p class="skills-display__description" id="skills-display-description">Programming languages in my toolkit.</p>
+              <div class="skills-display__rule"></div>
+              <ul class="skills-list" id="skills-list" aria-label="Programming skills">
+                <li><button class="skill-tile" type="button" aria-describedby="skills-skill-detail">Python</button></li>
+                <li><button class="skill-tile" type="button" aria-describedby="skills-skill-detail">C</button></li>
+                <li><button class="skill-tile" type="button" aria-describedby="skills-skill-detail">C++</button></li>
+                <li><button class="skill-tile" type="button" aria-describedby="skills-skill-detail">JavaScript</button></li>
+              </ul>
+              <p class="skills-display__skill-detail" id="skills-skill-detail" role="status" aria-live="polite">Focus or hover over a skill to see resume-backed context.</p>
+              <div class="skills-display__footer"><span>YASH.KUMAR</span><span>END OF SET <i>⌄</i></span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="experience" id="experience" aria-labelledby="experience-title">
+          <div class="experience__ambient" aria-hidden="true"></div>
+          <div class="experience__grid" aria-hidden="true"></div>
+
+          <div class="experience__heading">
+            <p class="experience__eyebrow"><span class="experience__eyebrow-line"></span> 03 / EXPERIENCE</p>
+            <h2 id="experience-title">Where I’ve built real software.</h2>
+            <p class="experience__intro">Practical engineering experience across backend development, APIs, databases, and enterprise software.</p>
+          </div>
+
+          <div class="experience__layout">
+            <aside class="experience-timeline" aria-label="Internship timeline">
+              <p class="experience-timeline__label">01 <span>/ EXPERIENCE</span></p>
+              <span class="experience-timeline__node" aria-hidden="true"></span>
+              <p class="experience-timeline__date"><time datetime="2026-05">MAY</time><span>—</span><time datetime="2026-07">JUL 2026</time></p>
+              <h3>Jindal Stainless Ltd.</h3>
+              <p class="experience-timeline__location"><span aria-hidden="true">●</span> Hisar</p>
+            </aside>
+
+            <article class="experience-card" aria-labelledby="experience-role">
+              <header class="experience-card__heading">
+                <div>
+                  <p class="experience-card__role-label">SOFTWARE DEVELOPMENT INTERN</p>
+                  <h3 id="experience-role">Full-stack enterprise application</h3>
+                </div>
+                <button class="experience-card__toggle" type="button" aria-expanded="false" aria-controls="experience-details">
+                  <span>VIEW DETAILS</span><span class="experience-card__toggle-icon" aria-hidden="true">+</span>
+                </button>
+              </header>
+
+              <p class="experience-card__summary">Developed a full-stack enterprise application using Node.js, Express.js, MongoDB, and Mongoose, including a modular frontend and REST APIs.</p>
+
+              <div class="experience-card__details" id="experience-details" hidden>
+                <div class="experience-details-grid">
+                  <section class="experience-details-block experience-details-block--wide">
+                    <h4>01 / APPLICATION</h4>
+                    <p>Built a full-stack enterprise application using Node.js, Express.js, MongoDB, and Mongoose, including a modular frontend and REST APIs.</p>
+                  </section>
+                  <section class="experience-details-block">
+                    <h4>02 / BACKEND</h4>
+                    <ul><li>Authentication</li><li>Authorization</li><li>REST APIs</li><li>CRUD workflows</li><li>Validation</li></ul>
+                  </section>
+                  <section class="experience-details-block">
+                    <h4>03 / DATA &amp; OPERATIONS</h4>
+                    <ul><li>Excel import/export</li><li>PDF management</li><li>Filtering</li><li>PO expiry monitoring</li><li>Audit tracking</li></ul>
+                  </section>
+                  <section class="experience-details-block experience-details-block--wide">
+                    <h4>04 / ENGINEERING</h4>
+                    <ul class="experience-details-tools"><li>MongoDB Atlas</li><li>Postman</li><li>Git/GitHub</li><li>Render</li></ul>
+                  </section>
+                </div>
+              </div>
+
+              <div class="experience-card__stack">
+                <p>TOOLS / STACK</p>
+                <ul class="tech-tags" aria-label="Technologies and tools used">
+                  <li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Mongoose</li><li>REST APIs</li><li>Postman</li><li>Git/GitHub</li><li>MongoDB Atlas</li><li>Render</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="projects" id="projects" aria-labelledby="projects-title">
+          <div class="projects__ambient" aria-hidden="true"></div>
+          <div class="projects__grid" aria-hidden="true"></div>
+
+          <div class="projects__heading">
+            <div>
+              <p class="projects__eyebrow"><span class="projects__eyebrow-line"></span> 04 / PROJECTS</p>
+              <h2 id="projects-title">Things I’ve built.</h2>
+            </div>
+            <p class="projects__intro">Projects where software engineering meets practical problem solving.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card project-card--primary" aria-labelledby="project-email-title">
+              <div class="project-card__topline"><span>PROJECT <b>01</b> / 02</span><span class="project-card__type"><i></i> AI WORKFLOW</span></div>
+              <div class="project-card__body">
+                <div class="project-card__copy">
+                  <h3 id="project-email-title">AI Email Copilot</h3>
+                  <p>An AI-powered Gmail assistant for email summarization, reply drafting, and action-item extraction.</p>
+                  <p class="project-card__highlight">ENGINEERING FOCUS <span>OAuth 2.0 with access and refresh token handling.</span></p>
+                  <ul class="project-card__tags" aria-label="Technologies used">
+                    <li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Gmail API</li><li>Gemini API</li>
+                  </ul>
+                </div>
+
+                <div class="project-visual project-visual--email interactive-glow" role="img" tabindex="0" aria-label="Conceptual flow from Gmail through OAuth and email to Gemini and an AI workflow">
+                  <div class="project-visual__header"><span>CONCEPTUAL FLOW</span><span>01 <i>/</i> 05</span></div>
+                  <div class="pipeline pipeline--email">
+                    <div class="pipeline__step"><span class="pipeline__symbol">G</span><span>GMAIL</span><small>MAIL API</small></div>
+                    <span class="pipeline__connector" aria-hidden="true">↓</span>
+                    <div class="pipeline__step"><span class="pipeline__symbol">◎</span><span>OAUTH</span><small>ACCESS</small></div>
+                    <span class="pipeline__connector" aria-hidden="true">↓</span>
+                    <div class="pipeline__step"><span class="pipeline__symbol">✉</span><span>EMAIL</span><small>READ / SEND</small></div>
+                    <span class="pipeline__connector" aria-hidden="true">↓</span>
+                    <div class="pipeline__step pipeline__step--accent"><span class="pipeline__symbol">✳</span><span>GEMINI</span><small>AI MODEL</small></div>
+                    <span class="pipeline__connector" aria-hidden="true">↓</span>
+                    <div class="pipeline__step pipeline__step--result"><span class="pipeline__symbol">↗</span><span>AI WORKFLOW</span><small>ASSISTED EMAIL</small></div>
+                  </div>
+                  <div class="project-visual__footer"><span>GMAIL <i>·</i> GEMINI</span><span>FLOW / A</span></div>
+                </div>
+              </div>
+              <div class="project-card__footer"><span class="project-card__meta"><i></i> AI-POWERED EMAIL ASSISTANT</span><button class="project-card__action" type="button" data-project-open="email">VIEW CASE STUDY <span aria-hidden="true">→</span></button></div>
+              <span class="project-card__watermark" aria-hidden="true">01</span>
+            </article>
+
+            <article class="project-card project-card--secondary" aria-labelledby="project-hospital-title">
+              <div class="project-card__topline"><span>PROJECT <b>02</b> / 02</span><span class="project-card__type"><i></i> FULL STACK</span></div>
+              <div class="project-card__body">
+                <div class="project-card__copy">
+                  <h3 id="project-hospital-title">Hospital Management System</h3>
+                  <p>A full-stack hospital system for managing patients, doctors, appointments, and time slots.</p>
+                  <p class="project-card__highlight">ENGINEERING FOCUS <span>Automated 30-minute slot generation with duplicate-slot prevention.</span></p>
+                  <ul class="project-card__tags" aria-label="Technologies used">
+                    <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Mongoose</li>
+                  </ul>
+                </div>
+
+                <div class="project-visual project-visual--hospital interactive-glow" role="img" tabindex="0" aria-label="Conceptual flow from patient through API and MongoDB to appointment and slot management">
+                  <div class="project-visual__header"><span>CONCEPTUAL FLOW</span><span>02 <i>/</i> 05</span></div>
+                  <div class="pipeline pipeline--hospital">
+                    <div class="pipeline__step"><span class="pipeline__symbol">＋</span><span>PATIENT</span><small>RECORD</small></div>
+                    <span class="pipeline__connector" aria-hidden="true">↓</span>
+                    <div class="pipeline__step"><span class="pipeline__symbol">⌘</span><span>API</span><small>REQUEST</small></div>
+                    <span class="pipeline__connector" aria-hidden="true">↓</span>
+                    <div class="pipeline__step pipeline__step--accent"><span class="pipeline__symbol">◉</span><span>MONGODB</span><small>DATA</small></div>
+                    <span class="pipeline__connector" aria-hidden="true">↓</span>
+                    <div class="pipeline__step"><span class="pipeline__symbol">▤</span><span>APPOINTMENT</span><small>SCHEDULE</small></div>
+                    <span class="pipeline__connector" aria-hidden="true">↓</span>
+                    <div class="pipeline__step pipeline__step--result"><span class="pipeline__symbol">◷</span><span>SLOT</span><small>AVAILABILITY</small></div>
+                  </div>
+                  <div class="project-visual__footer"><span>PATIENT <i>·</i> APPOINTMENT</span><span>FLOW / B</span></div>
+                </div>
+              </div>
+              <div class="project-card__footer"><span class="project-card__meta"><i></i> HOSPITAL OPERATIONS</span><button class="project-card__action" type="button" data-project-open="hospital">VIEW CASE STUDY <span aria-hidden="true">→</span></button></div>
+              <span class="project-card__watermark" aria-hidden="true">02</span>
+            </article>
+          </div>
+        </section>
+
+        <dialog class="project-modal" id="project-modal" aria-modal="true" aria-labelledby="project-modal-title" aria-describedby="project-modal-description">
+          <div class="project-modal__surface">
+            <header class="project-modal__header">
+              <div class="project-modal__heading-meta"><p id="project-modal-kicker">PROJECT CASE / 01</p><span>DETAIL VIEW</span></div>
+              <button class="project-modal__close" type="button" data-project-close autofocus><span>CLOSE</span><b aria-hidden="true">×</b></button>
+              <h2 id="project-modal-title"></h2>
+              <p id="project-modal-description"></p>
+            </header>
+            <div class="project-modal__content" id="project-modal-content"></div>
+          </div>
+        </dialog>
+
+        <section class="how-build" id="how-i-build" aria-labelledby="how-build-title">
+          <div class="how-build__ambient" aria-hidden="true"></div>
+          <header class="how-build__heading">
+            <p class="how-build__eyebrow"><span></span> ENGINEERING WORKFLOW</p>
+            <h2 id="how-build-title">How I turn problems into software.</h2>
+            <p>A practical path through requirements, application structure, implementation, testing, and deployment.</p>
+          </header>
+
+          <div class="workflow-explorer">
+            <div class="workflow-steps" role="tablist" aria-label="Engineering workflow steps" aria-orientation="vertical">
+              <button class="workflow-step is-active" id="workflow-step-understand" type="button" role="tab" aria-selected="true" aria-controls="workflow-panel" tabindex="0" data-workflow-step="understand"><span>01</span><strong>UNDERSTAND</strong><i aria-hidden="true">↗</i></button>
+              <button class="workflow-step" id="workflow-step-design" type="button" role="tab" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-workflow-step="design"><span>02</span><strong>DESIGN</strong><i aria-hidden="true">↗</i></button>
+              <button class="workflow-step" id="workflow-step-build" type="button" role="tab" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-workflow-step="build"><span>03</span><strong>BUILD</strong><i aria-hidden="true">↗</i></button>
+              <button class="workflow-step" id="workflow-step-test" type="button" role="tab" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-workflow-step="test"><span>04</span><strong>TEST</strong><i aria-hidden="true">↗</i></button>
+              <button class="workflow-step" id="workflow-step-deploy" type="button" role="tab" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-workflow-step="deploy"><span>05</span><strong>DEPLOY</strong><i aria-hidden="true">↗</i></button>
+            </div>
+            <div class="workflow-panel interactive-glow" id="workflow-panel" role="tabpanel" aria-labelledby="workflow-step-understand" tabindex="0" aria-live="polite">
+              <div class="workflow-panel__topline"><span>WORKFLOW / <b id="workflow-panel-index">01</b></span><span><i></i> SELECTED STEP</span></div>
+              <h3 id="workflow-panel-title">UNDERSTAND</h3>
+              <p id="workflow-panel-description">Clarify the problem, identify requirements, and define the expected outcome.</p>
+              <ul id="workflow-panel-list" aria-label="Understand step details"><li>Understand the problem</li><li>Identify requirements</li><li>Define the expected outcome</li></ul>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+          <div class="contact__ambient" aria-hidden="true"></div>
+          <div class="contact__grid" aria-hidden="true"></div>
+
+          <div class="contact__heading">
+            <p class="contact__eyebrow"><span class="contact__eyebrow-line"></span> 05 / CONTACT</p>
+            <h2 id="contact-title">Let’s build something useful.</h2>
+            <p class="contact__intro">Have a project, opportunity, or just want to talk software? Send me a message.</p>
+          </div>
+
+          <div class="contact__layout">
+            <div class="contact__copy">
+              <h3 class="contact__connect-title">Let’s connect.</h3>
+
+              <div class="contact__availability">
+                <span aria-hidden="true"></span>
+                <div><p>CURRENT STATUS</p><strong>AVAILABLE FOR OPPORTUNITIES</strong></div>
+              </div>
+
+              <div class="contact__details">
+                <p class="contact__details-label">CONTACT DETAILS</p>
+                <a class="contact-email" href="mailto:yashkumar9926@gmail.com">
+                  <span class="contact-email__icon" aria-hidden="true">@</span>
+                  <span><small>EMAIL</small>yashkumar9926@gmail.com</span>
+                  <span class="contact-email__arrow" aria-hidden="true">↗</span>
+                </a>
+
+                <div class="contact__profiles" role="group" aria-label="Social profile links">
+                  <a class="contact-profile" href="https://github.com/yashkumar1907" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile, opens in a new tab"><b aria-hidden="true">GH</b> GitHub <small>OPEN ↗</small></a>
+                  <a class="contact-profile" href="https://www.linkedin.com/in/yash-kumar-2a69972a7/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile, opens in a new tab"><b aria-hidden="true">in</b> LinkedIn <small>OPEN ↗</small></a>
+                  <a class="contact-profile" href="https://leetcode.com/u/YASHKUMAR311201/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile, opens in a new tab"><b aria-hidden="true">LC</b> LeetCode <small>OPEN ↗</small></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-card">
+              <div class="contact-form-card__header">
+                <div><p>NEW MESSAGE</p><span>Send a note to Yash</span></div>
+                <span class="contact-form-card__mode"><i></i> PORTFOLIO API</span>
+              </div>
+
+              <div class="contact-success" id="contact-success" role="status" aria-live="polite" hidden>
+                  <span class="contact-success__icon" aria-hidden="true">✓</span>
+                  <div><strong>MESSAGE SAVED</strong><p id="contact-success-message">Your message was saved. Email notification status will appear here.</p></div>
+              </div>
+
+              <form class="contact-form" id="contact-form" novalidate>
+                <div class="contact-field" data-field="name">
+                  <label for="contact-name"><span class="contact-field__prefix" aria-hidden="true">INPUT / </span>Name <span>*</span></label>
+                  <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="120" required aria-invalid="false" aria-describedby="contact-name-error">
+                  <p class="contact-field__error" id="contact-name-error" aria-live="polite"></p>
+                </div>
+                <div class="contact-field" data-field="email">
+                  <label for="contact-email"><span class="contact-field__prefix" aria-hidden="true">INPUT / </span>Email <span>*</span></label>
+                  <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required aria-invalid="false" aria-describedby="contact-email-error">
+                  <p class="contact-field__error" id="contact-email-error" aria-live="polite"></p>
+                </div>
+                <div class="contact-field" data-field="message">
+                  <label for="contact-message"><span class="contact-field__prefix" aria-hidden="true">INPUT / </span>Message <span>*</span></label>
+                  <textarea id="contact-message" name="message" rows="4" maxlength="5000" required aria-invalid="false" aria-describedby="contact-message-error"></textarea>
+                  <p class="contact-field__error" id="contact-message-error" aria-live="polite"></p>
+                </div>
+                <div class="contact-form__footer">
+                  <p><span>*</span> REQUIRED FIELDS</p>
+                  <button class="contact-submit" type="submit">SEND MESSAGE <span aria-hidden="true">→</span></button>
+                </div>
+                <p class="contact-form__status" id="contact-form-status" role="status" aria-live="polite"></p>
+              </form>
+              <div class="contact-form-card__bottom"><span>YASH.KUMAR</span><span>STORAGE <i>·</i> EMAIL NOTIFICATION</span></div>
+            </div>
+          </div>
+          <div class="contact__bottomline"><span>THANKS FOR STOPPING BY.</span><span>05 <i>/</i> CONTACT</span></div>
+        </section>
+      </main>
+
+      <dialog class="resume-viewer" id="resume-viewer" aria-modal="true" aria-labelledby="resume-viewer-title" aria-describedby="resume-viewer-description">
+        <div class="resume-viewer__surface">
+          <header class="resume-viewer__header">
+            <div class="resume-viewer__eyebrow"><span>RESUME / PREVIEW</span><span>YASH KUMAR</span></div>
+            <button class="resume-viewer__close" type="button" data-resume-close aria-label="Close resume viewer" autofocus>CLOSE <b aria-hidden="true">×</b></button>
+            <h2 id="resume-viewer-title">Resume</h2>
+            <p id="resume-viewer-description">A concise preview of verified education, experience, projects, skills, and problem-solving information.</p>
+            <div class="resume-viewer__actions">
+              <a class="resume-viewer__action resume-viewer__action--primary" href="assets/resume/Yash_Kumar_Resume.pdf" target="_blank" rel="noopener noreferrer">VIEW FULL PDF <span aria-hidden="true">↗</span></a>
+              <a class="resume-viewer__action" href="assets/resume/Yash_Kumar_Resume.pdf" download="Yash_Kumar_Resume.pdf">DOWNLOAD RESUME <span aria-hidden="true">↓</span></a>
+            </div>
+          </header>
+          <div class="resume-viewer__content">
+            <article class="resume-document" aria-label="Resume information preview">
+              <section class="resume-document__section resume-document__education">
+                <h3>01 / EDUCATION</h3>
+                <h4>B.Tech in Computer Science and Engineering with AI</h4>
+                <p>Netaji Subhas University of Technology</p>
+                <p class="resume-document__meta">EXPECTED GRADUATION 2027 <span>·</span> CGPA 7.2</p>
+              </section>
+              <section class="resume-document__section resume-document__experience">
+                <h3>02 / EXPERIENCE</h3>
+                <h4>Software Development Intern</h4>
+                <p>Jindal Stainless Ltd. <span>·</span> Hisar</p>
+                <p class="resume-document__meta">MAY 2026 — JULY 2026</p>
+                <p>Developed a full-stack enterprise application using Node.js, Express.js, MongoDB/Mongoose, and REST APIs. Work included authentication and authorization, CRUD, validation, Excel import/export, PDF management, filtering, PO expiry monitoring, and audit tracking.</p>
+              </section>
+              <section class="resume-document__section resume-document__projects">
+                <h3>03 / PROJECTS</h3>
+                <div class="resume-document__project">
+                  <h4>AI Email Copilot</h4>
+                  <p>AI-powered Gmail assistant for email summarization, reply drafting, action-item extraction, translation, tone improvement, and email composition.</p>
+                </div>
+                <div class="resume-document__project">
+                  <h4>Hospital Management System</h4>
+                  <p>Full-stack system for patient, doctor, admin, appointment, and slot management, including automated 30-minute slot generation and duplicate-slot prevention.</p>
+                </div>
+              </section>
+              <section class="resume-document__section resume-document__skills">
+                <h3>04 / SKILLS</h3>
+                <p><strong>Programming</strong> Python · C · C++ · JavaScript</p>
+                <p><strong>Web &amp; Backend</strong> HTML · CSS · Node.js · Express.js · REST APIs · JWT · Mongoose</p>
+                <p><strong>Database</strong> SQL · MongoDB</p>
+                <p><strong>Core CS</strong> DSA · DBMS · Operating Systems · OOP · System Design</p>
+                <p><strong>Tools &amp; Deployment</strong> Git · GitHub · Postman · Render</p>
+              </section>
+              <section class="resume-document__section resume-document__achievements">
+                <h3>05 / ACHIEVEMENTS</h3>
+                <p>500+ DSA problems solved.</p>
+              </section>
+            </article>
+          </div>
+        </div>
+      </dialog>
+
+      <footer class="site-footer" aria-label="Site footer">
+        <div class="site-footer__identity">
+          <a href="#home" aria-label="Yash Kumar, back to home">YASH KUMAR</a>
+          <p>Software Developer <span aria-hidden="true">·</span> AI / ML</p>
+        </div>
+        <p class="site-footer__built">Built with HTML, CSS &amp; JavaScript.</p>
+        <nav class="site-footer__social" aria-label="Social profiles">
+          <a href="https://github.com/yashkumar1907" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile, opens in a new tab">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/yash-kumar-2a69972a7/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile, opens in a new tab">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://leetcode.com/u/YASHKUMAR311201/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile, opens in a new tab">LeetCode <span aria-hidden="true">↗</span></a>
+        </nav>
+        <p class="site-footer__copyright">© 2026 Yash Kumar</p>
+      </footer>
+    </div>
+
+    <aside class="ai-assistant" aria-label="AI portfolio assistant">
+      <section class="ai-assistant__panel" id="ai-assistant-panel" role="dialog" aria-modal="false" aria-labelledby="ai-assistant-title" hidden>
+        <header class="ai-assistant__header">
+          <div class="ai-assistant__identity">
+            <span class="ai-assistant__avatar" aria-hidden="true">YK</span>
+            <div><h2 id="ai-assistant-title">Portfolio assistant</h2><p><i></i> GROUNDED IN PORTFOLIO INFO</p></div>
+          </div>
+          <button class="ai-assistant__close" type="button" aria-label="Close portfolio assistant">×</button>
+        </header>
+
+        <div class="ai-assistant__messages" id="ai-assistant-messages" role="log" aria-live="polite" aria-relevant="additions text" aria-label="Assistant conversation">
+          <div class="ai-assistant__message ai-assistant__message--assistant">Hi, I’m Yash’s portfolio assistant. Ask me about his education, skills, internship, or projects.</div>
+        </div>
+
+        <div class="ai-assistant__suggestions" aria-label="Suggested questions">
+          <button type="button">Tell me about Yash</button>
+          <button type="button">What projects has Yash built?</button>
+          <button type="button">What technologies does Yash know?</button>
+          <button type="button">Tell me about his internship</button>
+        </div>
+
+        <form class="ai-assistant__form" id="ai-assistant-form">
+          <label class="visually-hidden" for="ai-assistant-input">Ask a question about Yash</label>
+          <input id="ai-assistant-input" name="message" type="text" maxlength="1000" autocomplete="off" placeholder="Ask about Yash’s work…">
+          <button type="submit" aria-label="Send message"><span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="ai-assistant__note">ANSWERS ARE LIMITED TO VERIFIED PORTFOLIO INFORMATION</p>
+      </section>
+
+      <button class="ai-assistant__toggle" type="button" aria-expanded="false" aria-controls="ai-assistant-panel" aria-label="Open AI portfolio assistant">
+        <span class="ai-assistant__toggle-icon" aria-hidden="true">✳</span><span class="ai-assistant__toggle-label">ASK AI</span>
+      </button>
+    </aside>
+  </body>
+</html>
